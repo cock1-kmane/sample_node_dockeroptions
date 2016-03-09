@@ -27,9 +27,9 @@ build:
     - ls -al
 
   post_ci:
-    - docker build -t shippabledocker/shiphitchcock1_sample_node_multiplepush
+    - docker build -t shippabledocker/shiphitchcock1_sample_node_multiplepush .
     - docker push shippabledocker/shiphitchcock1_sample_node_multiplepush
-   # - docker build -t shiphitchcock1/sample_node_multiplepush
+   # - docker build -t shiphitchcock1/sample_node_multiplepush .
    # - docker push shiphitchcock1/sample_node_multiplepush
   #  - docker build -t=quay.io/shippablequay/shiphitchcock1_sample_node_multiplepush .
   #  - docker push quay.io/shippablequay/shiphitchcock1_sample_node_multiplepush
