@@ -29,8 +29,8 @@ build:
   post_ci:
   #  - docker build -t shippabledocker/sample_node_multiplepush2:9mar16 .
    # - docker push shippabledocker/sample_node_multiplepush2:9mar16
-    - docker tag -f shippabledocker/sample_node_multiplepush2:9mar16 shippabledocker/sample_node_multiplepush2:tip
-    - docker tag -f shippabledocker/sample_node_multiplepush2:9mar16 shippabledocker/sample_node_multiplepush2:test
+    - docker tag -f shippabledocker/sample_node_multiplepush2:latest shippabledocker/sample_node_multiplepush2:tip
+    - docker tag -f shippabledocker/sample_node_multiplepush2:latest shippabledocker/sample_node_multiplepush2:test
     - docker push shippabledocker/sample_node_multiplepush2:tip
     - docker push shippabledocker/sample_node_multiplepush2:test
 
